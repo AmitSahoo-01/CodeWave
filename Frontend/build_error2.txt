@@ -1,0 +1,29 @@
+
+> frontend@0.0.0 build
+> vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[39m 2593 modules transformed.
+[31m✗[39m Build failed in 10.03s
+[31merror during build:
+[31msrc/app/App.jsx (5:16): "PanelGroup" is not exported by "node_modules/react-resizable-panels/dist/react-resizable-panels.js", imported by "src/app/App.jsx".[31m
+file: [36mC:/Users/VIVOBOOK/OneDrive/Desktop/oWnCrT/CollaborativeEditor/Frontend/src/app/App.jsx:5:16[31m
+[33m
+3: import { createProvider } from "../utils/yjsSetup";
+4: import { initDefaultFiles } from "../utils/fileSystem";
+5: import { Panel, PanelGroup, PanelResizeHandle } from "react-resizable-panels";
+                   ^
+6: import Sidebar from "../components/Sidebar";
+7: import EditorWorkspace from "../components/EditorWorkspace";
+[31m
+    at getRollupError (file:///C:/Users/VIVOBOOK/OneDrive/Desktop/oWnCrT/CollaborativeEditor/Frontend/node_modules/rollup/dist/es/shared/parseAst.js:406:41)
+    at error (file:///C:/Users/VIVOBOOK/OneDrive/Desktop/oWnCrT/CollaborativeEditor/Frontend/node_modules/rollup/dist/es/shared/parseAst.js:402:42)
+    at Module.error (file:///C:/Users/VIVOBOOK/OneDrive/Desktop/oWnCrT/CollaborativeEditor/Frontend/node_modules/rollup/dist/es/shared/node-entry.js:17380:16)
+    at Module.traceVariable (file:///C:/Users/VIVOBOOK/OneDrive/Desktop/oWnCrT/CollaborativeEditor/Frontend/node_modules/rollup/dist/es/shared/node-entry.js:17813:29)
+    at ModuleScope.findVariable (file:///C:/Users/VIVOBOOK/OneDrive/Desktop/oWnCrT/CollaborativeEditor/Frontend/node_modules/rollup/dist/es/shared/node-entry.js:15403:39)
+    at ReturnValueScope.findVariable (file:///C:/Users/VIVOBOOK/OneDrive/Desktop/oWnCrT/CollaborativeEditor/Frontend/node_modules/rollup/dist/es/shared/node-entry.js:5676:38)
+    at FunctionBodyScope.findVariable (file:///C:/Users/VIVOBOOK/OneDrive/Desktop/oWnCrT/CollaborativeEditor/Frontend/node_modules/rollup/dist/es/shared/node-entry.js:5676:38)
+    at Identifier.bind (file:///C:/Users/VIVOBOOK/OneDrive/Desktop/oWnCrT/CollaborativeEditor/Frontend/node_modules/rollup/dist/es/shared/node-entry.js:5450:40)
+    at CallExpression.bind (file:///C:/Users/VIVOBOOK/OneDrive/Desktop/oWnCrT/CollaborativeEditor/Frontend/node_modules/rollup/dist/es/shared/node-entry.js:2828:28)
+    at CallExpression.bind (file:///C:/Users/VIVOBOOK/OneDrive/Desktop/oWnCrT/CollaborativeEditor/Frontend/node_modules/rollup/dist/es/shared/node-entry.js:12512:15)[39m
